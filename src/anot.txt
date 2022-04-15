@@ -1,0 +1,9 @@
+<div class="ficha-main-content" style="display: flex;padding: 10px 0px 0px 10px;"><div style="margin-right: 10px;"><div style="display: flex;margin-bottom: 10px;"><div><div style="max-width: 22vw;margin-bottom: 10px;"><h5 style="font-size: 2.5rem;text-transform: uppercase;">Arnold Schwarzenegge</h5><label style="margin-right: 10px;">Origem: <span style="width: 125px;border-bottom: 1px solid white;display: inline-block;">Atleta</span></label><label style="/* width: 125px; */
+    /* border-bottom: 1px solid white; */
+    /* display: inline-block; */">Origem: <span style="width: 125px;
+    border-bottom: 1px solid white;
+    display: inline-block;">Combatente</span></label><label style="margin-right: 10px;">Origem: <span style="width: 125px;
+    border-bottom: 1px solid white;
+    display: inline-block;">Atleta</span></label><label>Origem: <span style="width: 125px;
+    border-bottom: 1px solid white;
+    display: inline-block;">Atleta</span></label></div><div><img src="Atributos.jpg" alt="" style="/* height: 50vh; */width: 22vw;"></div></div><div style="width: 18.5vw;"><div style="display: flex;justify-content: center;margin-bottom: 10px;"><img src="OrdoRealitasSimbolo.png" alt="" style="height: 25vh;"></div><div><div style="display: flex;justify-content: space-between;margin-bottom: 10px;"><div style="height: 175px;width: 149px;background: #00800052;"><h5>Saúde</h5></div><div style="width: 150px;height: 175px;background: #00640052;"><h5>Defesas</h5></div></div><div style="height: 200px;background: #80008052;"><div><h5>Resistências a Dano</h5></div></div></div></div></div><div style="background: #ff000052;height: 125px;"><h5>Armas</h5></div></div><div style="background: #0000ff52;width: 200px;"><h5>Perícias</h5></div></div>
