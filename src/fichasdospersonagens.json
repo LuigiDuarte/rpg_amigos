@@ -1,0 +1,198 @@
+{
+    "Mauro Nunes":{
+        "nome": "Mauro Nunes",
+        "info-princ": {
+            "origem": "Atleta",
+            "classe": "Combatente",
+            "nex": "5%",
+            "patente": "Recruta"
+        },
+        "atributos":{
+            "for":"+2",
+            "agi":"0",
+            "int":"-1",
+            "pre":"+1",
+            "vig":"+2"
+        },
+        "saude":{
+            "pv":22,
+            "san":12,
+            "pe":4
+        },
+        "defesas":{
+            "passiva":15,
+            "bloqueio":22,
+            "esquiva":20
+        },
+        "resistencias":{
+            "fisica":0,
+            "balistica":0,
+            "sangue":0,
+            "morte":0,
+            "energia":0,
+            "conhecimento":0,
+            "insanidade":0
+        },
+        "pericias":[
+            {"nome":"Atletismo","valor":"+5","grau":"Treinado"},
+            {"nome":"Atualidades","valor":"0","grau":""},
+            {"nome":"Ciência","valor":"0","grau":""},
+            {"nome":"Diplomacia","valor":"0","grau":""},
+            {"nome":"Enganação","valor":"0","grau":""},
+            {"nome":"Fortitude","valor":"+5","grau":"Treinado"},
+            {"nome":"Furtividade","valor":"0","grau":""},
+            {"nome":"Intimidação","valor":"+5","grau":"Treinado"},
+            {"nome":"Intuição","valor":"0","grau":""},
+            {"nome":"Investigação","valor":"0","grau":""},
+            {"nome":"Luta","valor":"+15","grau":"Expert"},
+            {"nome":"Medicina","valor":"0","grau":""},
+            {"nome":"Ocultismo","valor":"0","grau":""},
+            {"nome":"Percepção","valor":"0","grau":""},
+            {"nome":"Pilotagem","valor":"0","grau":""},
+            {"nome":"Pontaria","valor":"0","grau":""},
+            {"nome":"Prestidigitação","valor":"0","grau":""},
+            {"nome":"Profissão","valor":"0","grau":""},
+            {"nome":"Reflexos","valor":"+10","grau":"Competente"},
+            {"nome":"Religião","valor":"0","grau":""},
+            {"nome":"Tática","valor":"0","grau":""},
+            {"nome":"Tecnologia","valor":"0","grau":""},
+            {"nome":"Vontade","valor":"0","grau":""}
+        ],
+        "armas":[
+            {"nome":"Katana","tipo":"Especial (duas mãos)","ataque":"+5","alcance":"Adjacente","dano":"1d10+4","critico":"20/+1d","recarga":"","especial":""},
+            {"nome":"Faca de combate","tipo":"Comum (uma mão/arr.)","ataque":"+5","alcance":"Curto","dano":"1d6+2","critico":"20/+1d","recarga":"","especial":""},
+            {"nome":".38 cano curto","tipo":"Revólver (CP)","ataque":"+5","alcance":"Curto","dano":"2d4","critico":"20/+2d","recarga":"3(Comp)","especial":"Discreto"}
+        ],
+        "proficiencias":[
+            "Armas Simples","Armas de Fogo (Curtas e Longas), Proteção Leve e Pesada"
+        ],
+        "habilidades":[
+            {
+                "nome":"110%",
+                "tipo":"Origem",
+                "descricao":"Uma vez por cena, quando fizer um teste de perícia usando Força ou Agilidade (exceto testes de ataque) você pode usar 2 PE para receber +5 no teste."
+            },
+            {
+                "nome":"Ataque Poderoso",
+                "tipo":"Classe",
+                "descricao":"Você é capaz de desferir um ataque poderoso. Quando realizar um ataque usando Luta ou Pontaria, você pode gastar 2 PE para receber +5 no teste. Além disso, você pode trocar o bônus de +5 no teste de ataque para receber um dado adicional de dano (de acordo com o dado de dano da arma)."
+            }
+        ],
+        "inventario":{
+            "capacidade":15,
+            "itens":[
+                {"item":"Katana","detalhes":"Arma corpo a corpo especial de duas mãos","espacos":2,"prestigio":1},
+                {"item":"Faca de combate","detalhes":"Arma corpo a corpo simples de uma mão","espacos":1,"prestigio":null},
+                {"item":"Granada de fragmentação","detalhes":"","espacos":1,"prestigio":null},
+                {"item":"Granada de atordoamento","detalhes":"","espacos":1,"prestigio":null},
+                {"item":"Granada de fumaça","detalhes":"","espacos":1,"prestigio":null},
+                {"item":"Revólver (CP)","detalhes":"Calibre Pequeno","espacos":1,"prestigio":null},
+                {"item":"Munição","detalhes":"Calibre Pequeno x2","espacos":2,"prestigio":null},
+                {"item":"Jaqueta reforçada","detalhes":"Proteção Leve","espacos":2,"prestigio":1},
+                {"item":"Fonte de Luz","detalhes":"Utensílio","espacos":1,"prestigio":null}
+            ]
+        },
+        "historia": "Mauro Nunes era um personal trainer e lutador aflito com a falta de motivação pessoal em sua vida, até que presenciou um ataque de uma criatura paranormal dentro da academia em que trabalhava. O seu instinto inicial foi partir para cima e proteger a vida de todos que estavam lá, pois considerava-as mais importantes que a sua, o que impressionou os agentes da Ordem que haviam acabado de chegar no local.",
+        "arte":"Miniatura - Mauro Nunes",
+        "rituais": {}
+    },
+
+    "Maya Shizuri":{
+        "nome": "Maya Shizuri",
+        "info-princ": {
+            "origem": "Mercenária",
+            "classe": "Combatente",
+            "nex": "5%",
+            "patente": "Recruta"
+        },
+        "atributos":{
+            "for":"+1",
+            "agi":"+2",
+            "int":"+1",
+            "pre":"0",
+            "vig":"0"
+        },
+        "saude":{
+            "pv":20,
+            "san":12,
+            "pe":3
+        },
+        "defesas":{
+            "passiva":20,
+            "bloqueio":26,
+            "esquiva":27
+        },
+        "resistencias":{
+            "fisica":0,
+            "balistica":0,
+            "sangue":0,
+            "morte":0,
+            "energia":0,
+            "conhecimento":0,
+            "insanidade":0
+        },
+        "pericias":[
+            {"nome":"Atletismo","valor":"0","grau":""},
+            {"nome":"Atualidades","valor":"0","grau":""},
+            {"nome":"Ciência","valor":"0","grau":""},
+            {"nome":"Diplomacia","valor":"0","grau":""},
+            {"nome":"Enganação","valor":"0","grau":""},
+            {"nome":"Fortitude","valor":"0","grau":""},
+            {"nome":"Furtividade","valor":"+5","grau":""},
+            {"nome":"Intimidação","valor":"0","grau":""},
+            {"nome":"Intuição","valor":"+5","grau":"Treinado"},
+            {"nome":"Investigação","valor":"0","grau":""},
+            {"nome":"Luta","valor":"+15","grau":"Expert"},
+            {"nome":"Medicina","valor":"0","grau":""},
+            {"nome":"Ocultismo","valor":"0","grau":""},
+            {"nome":"Percepção","valor":"+5","grau":"Treinado"},
+            {"nome":"Pilotagem","valor":"0","grau":""},
+            {"nome":"Pontaria","valor":"+5","grau":"Treinado"},
+            {"nome":"Prestidigitação","valor":"0","grau":""},
+            {"nome":"Profissão","valor":"0","grau":""},
+            {"nome":"Reflexos","valor":"+10","grau":"Competente"},
+            {"nome":"Religião","valor":"0","grau":""},
+            {"nome":"Tática","valor":"0","grau":""},
+            {"nome":"Tecnologia","valor":"0","grau":""},
+            {"nome":"Vontade","valor":"0","grau":""}
+        ],
+        "armas":[
+            {"nome":"UMP","tipo":"Submetralhadora (CP)","ataque":"+5","alcance":"Médio","dano":"2d4","critico":"20/+2d","recarga":"5 / Mov","especial":"Rajada"},
+            {"nome":"Faca de combate","tipo":"Comum (uma mão / arr.)","ataque":"+5/0","alcance":"Curto","dano":"1d8","critico":"20/+1d","recarga":"","especial":"Discreta"},
+            {"nome":"Glock 17","tipo":"Pistola (CP)","ataque":"+5","alcance":"Curto","dano":"2d4","critico":"19/+1d","recarga":"5 / Mov","especial":"Discreto"}
+        ],
+        "proficiencias":[
+            "Armas Simples","Armas de Fogo (Curtas e Longas), Proteção Leve e Pesada"
+        ],
+        "habilidades":[
+            {
+                "nome":"A Melhor Defesa é o Ataque",
+                "tipo":"Origem",
+                "descricao":"No começo de uma Cena de Ação, você pode usar 2 PE para receber uma ação padrão adicional no seu primeiro turno."
+            },
+            {
+                "nome":"Ataque Poderoso",
+                "tipo":"Classe",
+                "descricao":"Você é capaz de desferir um ataque poderoso. Quando realizar um ataque usando Luta ou Pontaria, você pode gastar 2 PE para receber +5 no teste. Além disso, você pode trocar o bônus de +5 no teste de ataque para receber um dado adicional de dano (de acordo com o dado de dano da arma)."
+            }
+        ],
+        "inventario":{
+            "capacidade":10,
+            "itens":[
+                {"item":"Submetralhadora UMP","detalhes":"Calibre Pequeno","espacos":1,"prestigio":1},
+                {"item":"Pistola Glock 17","detalhes":"Calibre Pequeno","espacos":1,"prestigio":null},
+                {"item":"Munição","detalhes":"Calibre Pequeno x3","espacos":3,"prestigio":null},
+                {"item":"Faca de combate","detalhes":"Arma comum de uma mão","espacos":1,"prestigio":null},
+                {"item":"Tase","detalhes":"","espacos":1,"prestigio":null},
+                {"item":"Proteção leve","detalhes":"","espacos":2,"prestigio":1},
+                {"item":"Fonte de luz","detalhes":"Utensílio","espacos":2,"prestigio":1}
+            ]
+        },
+        "historia": "Maya Shizuri trabalhou boa parte de sua vida em agências de segurança privada, até ser contratada para transportar uma carga misteriosa. No meio do seu serviço, o objeto sendo transportado se revelou amaldiçoado e paranormal, causando a morte de diversos colegas. Graças à sua própria agilidade e esperteza, Maya foi a única sobrevivente do evento, sendo contatada por agentes da Ordem que investigaram o caso.",
+        "arte":"Miniatura - Maya Shuzuri",
+        "rituais": {
+            "Mamada Mortal": "chupou"
+        }
+    }
+        
+}

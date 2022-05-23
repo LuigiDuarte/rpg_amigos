@@ -1,7 +1,10 @@
 import React, {useState, useRef} from 'react';
-import SelecaoDados from './SelecaoDados';
-import ResultadoPrinc from './ResultadoPrinc';
-import Historico from './Historico';
+import { useParams } from 'react-router-dom';
+import SelecaoDados from '../../SelecaoDados';
+import ResultadoPrinc from '../../ResultadoPrinc';
+import Historico from '../../Historico';
+import NomeValor from '../../NomeValor';
+import PaginaFicha from '../../PaginaFicha'
 
 export default () => {
 
@@ -13,7 +16,20 @@ export default () => {
     const [soma, setSoma] = useState(null)
     const [historico, setHist] = useState(<Historico />)
     const [unset, setUnset] = useState(true)
+    const [pag,setPag] = useState(1)
+    const param = useParams()
+    const nomePersonagem = param["nome"] != undefined ? param["nome"] : "Mauro Nunes"
+
     let valores = []
+
+    function mudaPag(val){
+        var ficha = document.getElementById("container-ficha")
+        if(pag != val && ficha != undefined){
+            ficha.classList.remove("item-" + pag)
+            ficha.classList.add("item-" + val)
+            setPag(val)
+        }
+    }
 
     function qtdDadosOptions(){
         var array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
@@ -92,68 +108,29 @@ export default () => {
         localStorage.removeItem("hist")
         setHist(<Historico />)
     }
+
+
     return(
         <>
             <div className='container-ficha'>
-                <div className="container-item-ficha item-1" style={{height:'90vh'}}>
+                <div id="container-ficha" className="container-item-ficha item-1" style={{height:'90vh'}}>
 
-                    <div class="ficha-main-content">
-                        <div style={{marginRight: '10px'}}>
-                            <div className="container-info-princ">
-                                <div style={{marginBottom: '10px'}}>
-                                    <h5 className="nome">Arnold Schwarzenegger</h5>
-                                    <label style="margin-right: 10px;">Origem: <span style="width: 125px;border-bottom: 1px solid white;display: inline-block;">Atleta</span></label>
-                                    <label>Origem: <span style="width: 125px;border-bottom: 1px solid white;display: inline-block;">Combatente</span></label>
-                                    <label style="margin-right: 10px;">Origem: <span style="width: 125px;border-bottom: 1px solid white;display: inline-block;">Atleta</span></label>
-                                    <label>Origem: <span style="width: 125px;border-bottom: 1px solid white;display: inline-block;">Atleta</span></label>
-                                </div>
-                                <div>
-                                    <img src="Atributos.jpg" alt=""/>
-                                </div>
-                            </div>
-                            <div style="width: 18.5vw;">
-                                <div style="display: flex;justify-content: center;margin-bottom: 10px;">
-                                    <img src="OrdoRealitasSimbolo.png" alt="" style="height: 25vh;" />
-                                </div>
-                                <div>
-                                    <div style="display: flex;justify-content: space-between;margin-bottom: 10px;">
-                                        <div style="height: 175px;width: 47.5%;background: #00800052;">
-                                            <h5>Saúde</h5>
-                                        </div>
-                                        <div style="width: 47.5%;height: 175px;background: #00640052;">
-                                            <h5>Defesas</h5>
-                                        </div>
-                                    </div>
-                                    <div style="height: 200px;background: #80008052;">
-                                        <div>
-                                            <h5>Resistências a Dano</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div style="background: #ff000052;height: 125px;">
-                            <h5>Armas</h5>
-                        </div>
-                        <div style="background: #0000ff52;width: 200px;/* display: none; */">
-                            <h5>Perícias</h5>
-                        </div>
-                    </div>
+                    <PaginaFicha nome={nomePersonagem} pag={pag}/>
 
                     <div className='ficha-bottons-content'>
-                        <div id='pag1Btn' className='button-ficha'>Página 1</div>
-                        <div id='pag2Btn' className='button-ficha'>Página 2</div>
+                        <div id='pag1Btn' className='button-ficha' onClick={()=>{mudaPag(1)}}>Página 1</div>
+                        <div id='pag2Btn' className='button-ficha' onClick={()=>{mudaPag(2)}}>Página 2</div>
                     </div>
                 </div>
 
-                <div className="container-item-ficha item-2" >
+                <div className="container-item-ficha item-3" >
                     <h2>Interface de Dados</h2>
                     <div style={{padding:'10px'}}>
                         <div className='dados-disp'>
                             <SelecaoDados selecionado={dado} muda={setDado}/>
                         </div>
                         <div className='qtd-container'>
-                            <div style={{width:'60%',textAlign:"center",display:'flex'}}>
+                            <div className='qtd-select'>
                                 <h5>Quantidade de Dados: </h5>
                                 <select name="qtd-dados" className='form-select' id="qtd-dados" defaultValue={1} onChange={ e => {setQtd(Number(e.target.value))}}>
                                     {qtdDadosOptions()}
@@ -165,9 +142,9 @@ export default () => {
                         </div>
                         { unset === false ?
                             <>
-                                <div className='titulos-result-hist' style={{display: 'flex',marginTop:'10px'}}>
-                                    <h5 style={{width:'60%',textAlign:"center"}}>Resultado</h5>
-                                    <h5 style={{width:'35%',textAlign:"center"}}>Histórico</h5>
+                                <div className='titulos-result-hist' style={{display: 'flex',marginTop:'10px',justifyContent:'space-between'}}>
+                                    <h5 className='titulo-branco' style={{width:'60%',textAlign:"center"}}>Resultado</h5>
+                                    <h5 className='titulo-branco' style={{width:'33%',textAlign:"center",marginRight:'20px'}}>Histórico</h5>
                                 </div>
                                 <div className='container-result-hist'>
                                     <div id='containerResultado' className='resul-princ-container scroll-personalizado'>

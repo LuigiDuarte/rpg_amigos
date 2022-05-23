@@ -1,9 +1,10 @@
 import './App.css';
-import FichaInGame from './FichaInGame';
-
+// import FichaInGame from './Paginas/Fichas/FichaInGame';
+import Rotas from "./routes"
 function App() {
   return (
-    <FichaInGame/>
+    // <FichaInGame/>
+    <Rotas/>
   );
 }
 

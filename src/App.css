@@ -8,6 +8,11 @@
   src: url('../public/DeFonte\ reduced\ Normale.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'fonte-teste';
+  src: url('../public/LinotypeTypoAmerican.ttf') format('truetype');
+}
+
 /* @font-face {
   font-family: 'fonte-nomes';
   src: url('../public/DeFonte\ reduced\ Normale.otf') format('opentype');
@@ -19,6 +24,16 @@ body{
   color: white;
   /* font-family: 'fonte-nomes',Times, serif; */
 }
+
+
+.container-escolha{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .container-ficha{
   width: 95vw;
@@ -44,32 +59,182 @@ body{
   background-image: url('../public/BackgroundFicha1.png');
 }
 
+.item-2{
+  display: flex;
+  width: 66.66%;
+  background-image: url('../public/BackgroundFicha2.png');
+}
+
+.titulo-branco{
+  text-align: center;
+  background-image: url('./imgs/BackgroundTitulos.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #505050;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  /* font-family: "fonte-teste"; */
+}
+
 .ficha-main-content{
   flex-grow: 9.95;
   display: flex;
   padding: 10px 0px 0px 10px;
 }
 
+.container-status-princ{
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
 .container-info-princ{
   display: flex;
+  flex-direction: column;
   margin-bottom: 10px;
-  max-width: 22vw;
+  max-width: 20vw;
 }
 
 .nome{
-  font-size: 2.5rem;text-transform: uppercase;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: 'fonte-nomes';
 }
-
 
 .info-geral{ 
   margin-right: 10px;
+  font-size: .95rem;
 }
 
 .info-geral span{
-  width: 125px;
+  width: 85px;
   border-bottom: 1px solid white;
   display: inline-block;
 }
+
+.container-atribuitos{
+  position: relative;
+}
+
+.container-atribuitos img{
+  width: 20vw;
+  position:absolute;
+}
+
+.atributo{
+  position: absolute;
+  z-index: 2;
+  display: inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.atributo h5{
+  font-size: 2.5rem;
+}
+
+#for{
+  left: 5%;
+  top: 33%;
+}
+
+#agi{
+  left: 36.5%;
+  top: 14%;
+}
+
+#int{
+  left: 68%;
+  top: 33%;
+}
+
+#pre{
+  left: 15%;
+  top: 65%;
+}
+
+#vig{
+  left: 57%;
+  top: 65%;
+}
+
+.container-img-ordo{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.container-img-ordo img{
+  height: 25vh;
+}
+
+.saude{
+  height: 175px;
+  width: 47.5%;
+  /* background: #00800052; */
+}
+
+.defesas{
+  width: 47.5%;
+  height: 175px;
+  /* background: #00640052; */
+}
+
+.resistencias{
+  /* background: #80008052; */
+}
+
+.container-armas{
+  /* background: #ff000052; */
+  height: 125px;
+}
+
+.table{
+  color: white !important;
+}
+
+.container-pericias{
+  /* background: #0000ff52; */
+  width: 220px;
+}
+
+.pericias{
+  padding-left:5px; 
+  max-height: 80vh; 
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.container-status-base{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.nome-valor{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5px;
+}
+.nomeNV{
+
+}
+.valEgrauNV{
+  display: flex;
+  align-items: center;
+}
+.valNV{
+  border: 1px solid white;
+  padding: 2px;
+  min-width: 35px;
+  text-align: center;
+}
+.grauNV{
+  font-size: 0.7rem;
+  margin-left: 4px;
+  min-width: 61.23px;
+}
+
 
 .ficha-bottons-content{
   flex-grow: 0.05;
@@ -82,11 +247,21 @@ body{
   height: 23vh;
   text-align: center;
   writing-mode: vertical-lr;
+  cursor: pointer;
+}
+
+
+.container-foto-prof-hab-inv{
+
+}
+
+.container-hist-rituais{
+  
 }
 
 
 
-.item-2{
+.item-3{
   width: 33.33%;
   padding: 20px ;
 }
@@ -185,9 +360,17 @@ body{
   margin-bottom: 10px;
 }
 
+.qtd-select{
+  width: 60%;
+  text-align: center;
+  align-items: center;
+  display:flex;
+}
+
 .qtd-container select{
    width: 70px;
    margin-left: 10px;
+   height: 38px;
 }
 
 .qtd-container h5{
@@ -269,6 +452,17 @@ body{
   max-height: 40vh;
   overflow-y: auto;
   margin-left: 10px;
+}
+
+.btn-dark {
+  color: #fff;
+  background-color: #3c3c3c;
+  border-color: #393939;
+}
+.btn-dark:focus {
+  color: #fff;
+  background-color: #3c3c3c;
+  border-color: #393939;
 }
 
 .item-hist {
